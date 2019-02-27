@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+ Run `npm i` to install dependencies.
 
-In the project directory, you can run:
+start the `webpack-dev-server` by running `npm run dev`.
 
-### `npm start`
+## Commands
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To lint your .js files, run `npm run lintjs`.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+To prettify your .js files, run `npm run format`.
 
-### `npm test`
+To lint your .scss files, run `npm run lintstyles`.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run your tests, while inside the client's root directory, run `npm run test`. Testing will watch all your changes in the `.test.js` files as well as create a `coverage` folder. To view the current coverage report, navigate to `coverage/Icov-report/src` and open `index.html` in a browser. Please note that `*.test.js` files will be ignored by ESlint. To find out why, please see <a href="https://github.com/mattcarlotta/Webpack-React-Boilerplate/blob/master/src/setupTests.js">setupTest.js</a> for more information.
 
-### `npm run build`
+To build and bundle your client resources for staging, use `npm run staging` while inside the root directory (staging utilizes source maps for errors).
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To build and bundle your client resources for production, use `npm run build` while inside the root directory (source maps will be excluded).
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Configuration
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- `config/envs.js` webpack environment variables.
+- `config/paths.js` webpack config folder paths.
+- `config/rules.js` webpack rules functions.
+- `config/webpack.common.js` common webpack config for both development and production environments.
+- `config/webpack.dev.js` webpack config for development environment only.
+- `config/webpack.prod.js` webpack config for production environment only.
+- `webpack.config.js` main webpack config that merges common and an environment based config
+- `src/setupTest.js` enzyme test setup for your React components.
+- `.babelrc` babel config for react js files.
+- `.browserslistrc` browsers list config.
+- `.eslintignore` eslint config for ignoring scss files.
+- `.eslintrc` eslint config for linting js files.
+- `.prettierc` prettier config.
+- `.stylelintrc.json` stylelint config for linting scss files.
