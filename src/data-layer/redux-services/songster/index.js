@@ -29,6 +29,9 @@ export const SongCollectionReducer = SongReducer;
 export const apiSongSterrFetchSongsByTitle =
   'https://www.songsterr.com/a/ra/songs.json?pattern=';
 
+export const apiSongSterrFetchSongsByArtist =
+  'https://www.songsterr.com/a/ra/songs/byartists.json?artists=';
+
 export const SongsterrEpics = combineEpics(epicFetchSongsFromSongSterr);
 
 export const SongsterrSelectors = SelectorExports;
