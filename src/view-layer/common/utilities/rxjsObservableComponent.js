@@ -21,9 +21,7 @@ export default (observable, triggers, initialState) => Component => {
     }
 
     render() {
-      return (
-        <Component {...this.props} {...this.state} {...triggers} />
-      );
+      return <Component {...this.props} {...this.state} {...triggers} />;
     }
   };
 };

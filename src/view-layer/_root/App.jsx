@@ -5,7 +5,7 @@ import store from '../../data-layer/redux-services';
 import logo from './logo.svg';
 import './App.scss';
 
-import Theme from '../mui-modules/muiTheme';
+import Theme from '../common/mui-modules/muiTheme';
 // Store Configuration
 
 const THEME = createMuiTheme(Theme);
