@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
 
-
 function renderInputComponent(inputProps) {
   const { classes, inputRef = () => {}, ref, ...other } = inputProps;
 
@@ -33,7 +32,8 @@ function getSuggestions(value) {
     ? []
     : suggestions.filter(suggestion => {
         const keep =
-          count < 5 && suggestion.label.slice(0, inputLength).toLowerCase() === inputValue;
+          count < 5 &&
+          suggestion.label.slice(0, inputLength).toLowerCase() === inputValue;
 
         if (keep) {
           count += 1;
@@ -84,11 +84,11 @@ class AutoSuggestComponent extends React.PureComponent {
 
   render() {
     const {
-    classes,
-    currentSuggestions,
-    fetchRequestHandler,
-    clearRequestHandler,
-     } = this.props;
+      classes,
+      currentSuggestions,
+      fetchRequestHandler,
+      clearRequestHandler,
+    } = this.props;
 
     const autosuggestProps = {
       renderInputComponent,
@@ -125,7 +125,9 @@ class AutoSuggestComponent extends React.PureComponent {
               <Paper
                 square
                 {...options.containerProps}
-                style={{ width: this.popperNode ? this.popperNode.clientWidth : null }}
+                style={{
+                  width: this.popperNode ? this.popperNode.clientWidth : null,
+                }}
               >
                 {options.children}
               </Paper>
@@ -140,8 +142,12 @@ class AutoSuggestComponent extends React.PureComponent {
 AutoSuggestComponent.propTypes = {
   classes: PropTypes.shape({ classes: PropTypes.object.isRequired }),
   suggestions: PropTypes.shape({ suggestions: PropTypes.object.isRequired }),
-  fetchRequestHandler: PropTypes.shape({ fetchRequestHandler: PropTypes.func.isRequired }),
-  clearRequestHandler: PropTypes.shape({ clearRequestHandler: PropTypes.func.isRequired }),
+  fetchRequestHandler: PropTypes.shape({
+    fetchRequestHandler: PropTypes.func.isRequired,
+  }),
+  clearRequestHandler: PropTypes.shape({
+    clearRequestHandler: PropTypes.func.isRequired,
+  }),
 };
 
 export default withStyles(styles)(AutoSuggestComponent);
