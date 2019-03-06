@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import store from '../../data-layer/redux-services';
-import logo from './logo.svg';
+import getAppRoutes from '../../business-layer/local-view-services/router/routes';
 import './App.scss';
 
 import Theme from '../common/mui-modules/muiTheme';
@@ -15,20 +15,8 @@ class App extends Component {
       <MuiThemeProvider theme={THEME}>
         <Provider store={store}>
           <div className="App">
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                Edit <code>src/App.jsx</code> and save to reload.
-              </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-              </a>
-            </header>
+            <header className="App-header" />
+            {getAppRoutes()}
           </div>
         </Provider>
       </MuiThemeProvider>

@@ -18,7 +18,7 @@ module.exports = {
   /* path to local styles (/src) */
   localCSS: resolve(__dirname, '../', 'src'),
   /* path to the globals.scss file (src/styles/globals/globals.scss) */
-  globalCSS: resolve(__dirname, '../', 'src/view-layer/global-styles/style'),
+  globalCSS: resolve(__dirname, '../', 'src/view-layer/_root/index.scss'),
   /* compiled images build path (build/media) */
   imagesFolder: 'media',
   /* compiled fonts build path (build/assets) */

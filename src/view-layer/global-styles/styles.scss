@@ -3,5 +3,11 @@
 // include bootstrap
 
 // my custom stylesheets
-@import "../common/mui-modules/modules/styles/reset.scss";
-@import "../common/mui-modules/modules/styles/base.scss";
+@import '../common/mui-modules/modules/styles/reset.scss';
+@import '../common/mui-modules/modules/styles/base.scss';
+// Variables;
+@import './colors';
+
+$pearl-blue: colorBuilder('light-blue', 'darken-1');
+$off-white: colorBuilder('grey', 'lighten-4');
+$off-white-dark: colorBuilder('grey', 'lighten-5');

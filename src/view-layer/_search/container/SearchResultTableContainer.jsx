@@ -1,7 +1,7 @@
 import react, { Component } from 'react';
 
 
-class SearchTableContainer extends Component {
+class SearchResultTableContainer extends Component {
 
   handleSuggestionsFetchRequested = ({ value }) => {
     this.setState({

@@ -1,5 +1,5 @@
 import { fromJS } from 'immutable';
-import { SongsList, Song } from '../../models/Song';
+import { SongsList, Song } from '../../models/songsterr/Song';
 
 import {
   FETCH_SONGSTERR_SONGS_BY_TITLE,
