@@ -11,12 +11,7 @@ import {
 import * as BookSelectorExports from './book-selectors';
 import { epicSearchGoogleBooks } from './book-effects';
 
-import {
-  BooksReducer,
-  getBookCollection,
-  getBookCollectionLoading,
-  getBookCollectionError,
-} from './book-reducer';
+import { BooksReducer } from './book-reducer';
 
 export const BookActionTypes = {
   BOOK_SEARCH_BY_TITLE,
@@ -35,6 +30,6 @@ export const apiGoogleFetchBooksByName =
 
 export const BookEpics = combineEpics(epicSearchGoogleBooks);
 
-export const BookCollectionReducer = BooksReducer;
+export { BooksReducer };
 
 export const BookSelectors = BookSelectorExports;

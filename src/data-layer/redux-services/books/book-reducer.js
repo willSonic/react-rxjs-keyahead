@@ -53,4 +53,4 @@ export const getBookCollection = state =>
   state.BooksReducer.get('bookCollection');
 export const getBookCollectionLoading = state =>
   state.BooksReducer.get('loading');
-export const getBookCollectionError = state => state.BooksReducer.get('error');
+export const getBookCollectionError = state => state.BooksReducer.error;

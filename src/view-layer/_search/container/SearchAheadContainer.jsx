@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import SuggestInputText from '../../common/mui-modules/form-elements/key-ahead/components/SuggestInputText';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
+import SuggestInputText from '../../common/mui-modules/form-elements/key-ahead/components/SuggestInputText';
+import { BookCollectionConnectServices } from '../../../business-layer/connected-services/BooksConnectService';
 
-export default class SearchAheadContainer extends Component {
+@BookCollectionConnectServices
+class SearchAheadContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,7 +36,7 @@ export default class SearchAheadContainer extends Component {
   render() {
     const { search, debounced } = this.state;
     return (
-      <div  className="search__container-input">
+      <div className="search__container-input">
         <SuggestInputText
           idValue="ws-suggest-input"
           labelValue="Book Finder"
@@ -47,3 +49,5 @@ export default class SearchAheadContainer extends Component {
     );
   }
 }
+
+export default SearchAheadContainer;
