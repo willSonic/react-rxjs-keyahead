@@ -1,22 +1,22 @@
 import { createSelector } from 'reselect';
 
 import {
-  getBookCollection,
-  getBookCollectionLoading,
-  getBookCollectionError,
+  getBooksSearchList,
+  getBooksSearchListLoading,
+  getBooksSearchListError,
 } from './book-reducer';
 
-export const bookCollection = createSelector(
-  [getBookCollection],
+export const booksSearchList = createSelector(
+  [getBooksSearchList],
   bookCollection => bookCollection,
 );
 
 export const isLoading = createSelector(
-  [getBookCollectionLoading],
+  [getBooksSearchList],
   loading => loading,
 );
 
-export const bookCollectionError = createSelector(
-  [getBookCollectionError],
+export const booksSearchListError = createSelector(
+  [getBooksSearchListError],
   error => error,
 );

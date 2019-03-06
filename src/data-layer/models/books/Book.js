@@ -1,4 +1,4 @@
-import { Record, List} from 'immutable';
+import { Record, List } from 'immutable';
 import { ImageLink } from './ImageLink';
 
 export const Book = Record(

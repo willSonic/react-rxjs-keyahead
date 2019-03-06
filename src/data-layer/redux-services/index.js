@@ -6,11 +6,11 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { Record } from 'immutable';
 
 import { SongCollectionReducer, SongsterrEpics } from './songster';
-import { BooksReducer, BookEpics } from './books';
+import { BooksListReducer, BookEpics } from './books';
 
 const reducers = {
   SongCollectionReducer,
-  BooksReducer,
+  BooksListReducer,
 };
 
 const rootEpic = combineEpics(SongsterrEpics, BookEpics);

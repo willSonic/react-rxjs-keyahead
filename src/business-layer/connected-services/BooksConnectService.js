@@ -6,8 +6,8 @@ import {
 
 const mapStateToProps = state => ({
   booksLoading: BookSelectors.isLoading(state),
-  bookCollection: BookSelectors.bookCollection(state),
-  bookCollectionError: BookSelectors.bookCollectionError(state),
+  booksSearchList: BookSelectors.booksSearchList(state),
+  booksSearchListError: BookSelectors.booksSearchListError(state),
 });
 
 const mapDispatchToProps = {

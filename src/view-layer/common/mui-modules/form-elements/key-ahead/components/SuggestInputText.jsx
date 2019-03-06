@@ -2,15 +2,15 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-//https://github.com/mui-org/material-ui/issues/12797
-//https://itnext.io/sharing-variables-between-js-and-sass-using-webpack-sass-loader-713f51fa7fa0
-//https://github.com/planetflash/sharing_variables_js_sass
+// https://github.com/mui-org/material-ui/issues/12797
+// https://itnext.io/sharing-variables-between-js-and-sass-using-webpack-sass-loader-713f51fa7fa0
+// https://github.com/planetflash/sharing_variables_js_sass
 const styles = () => ({
   container: {
     display: 'flex',
     flexWrap: 'wrap',
     maxWidth: '50%',
-  }
+  },
 });
 
 class SuggestInputText extends PureComponent {

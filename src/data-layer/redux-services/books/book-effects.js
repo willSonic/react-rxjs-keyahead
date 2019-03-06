@@ -6,6 +6,7 @@ import {
   BookActionTypes,
   BookActionFunctions,
   apiGoogleFetchBooksByName,
+  searchTerms,
 } from './index';
 
 /**
@@ -17,14 +18,21 @@ export const epicSearchGoogleBooks = action$ =>
   action$.pipe(
     ofType(BookActionTypes.BOOK_SEARCH_BY_TITLE),
     debounceTime(500),
-    mergeMap(payload => {
-      ajax.getJSON(`${apiGoogleFetchBooksByName + payload}`).pipe(
-        map(response =>
-          BookActionFunctions.bookSearchByTitleSuccess(response),
-        ),
-        catchError(error =>
-          of(BookActionFunctions.bookSearchByTitleFailure(error)),
-        ),
-      );
+    mergeMap(({ payload }) => {
+      return ajax
+        .getJSON(
+          `${apiGoogleFetchBooksByName +
+            searchTerms.IN_TITLE +
+            payload +
+            '&maxResults=20'}`,
+        )
+        .pipe(
+          map(response =>
+            BookActionFunctions.bookSearchByTitleSuccess(response),
+          ),
+          catchError(error =>
+            of(BookActionFunctions.bookSearchByTitleFailure(error)),
+          ),
+        );
     }),
   );

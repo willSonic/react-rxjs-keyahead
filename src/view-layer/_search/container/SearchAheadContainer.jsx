@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import SuggestInputText from '../../common/mui-modules/form-elements/key-ahead/components/SuggestInputText';
@@ -8,17 +9,14 @@ import { BookCollectionConnectServices } from '../../../business-layer/connected
 class SearchAheadContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      search: '',
-      debounced: '',
-    };
     this.onSearch$ = new Subject().pipe(debounceTime(300));
   }
 
   componentDidMount() {
-    this.subscription = this.onSearch$.subscribe(debounced =>
-      this.setState({ debounced }),
-    );
+    const { searchForBooksByTitle } = this.props;
+    this.subscription = this.onSearch$.subscribe(query => {
+      return searchForBooksByTitle(query);
+    });
   }
 
   componentWillUnmount() {
@@ -28,26 +26,33 @@ class SearchAheadContainer extends Component {
   }
 
   onInputChange = e => {
-    const search = e.target.value;
-    this.setState({ search });
-    this.onSearch$.next(search);
+    const searchQuery = e.target.value;
+    this.onSearch$.next(searchQuery);
   };
 
   render() {
-    const { search, debounced } = this.state;
+    const { booksSearchList } = this.props;
     return (
       <div className="search__container-input">
         <SuggestInputText
           idValue="ws-suggest-input"
           labelValue="Book Finder"
           helperValue="Search by Title"
-          value={search}
           handleChange={this.onInputChange}
         />
-        <div> debounced value:{debounced} </div>
+        <div> debounced value: {booksSearchList.size} </div>
       </div>
     );
   }
 }
+
+SearchAheadContainer.propTypes = {
+  booksLoading: PropTypes.bool,
+  booksSearchList: PropTypes.arrayOf(PropTypes.object),
+  booksSearchListError: PropTypes.object,
+  searchForBooksByTitle: PropTypes.shape({
+    searchForBooksByTitle: PropTypes.func.isRequired,
+  }),
+};
 
 export default SearchAheadContainer;

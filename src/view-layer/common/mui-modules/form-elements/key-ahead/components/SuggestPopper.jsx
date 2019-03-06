@@ -23,7 +23,7 @@ class SuggestPopperComponent extends PureComponent {
       >
         {({ TransitionProps }) => (
           <Fade {...TransitionProps} timeout={350}>
-            <Paper square>{options.children}</Paper>
+            <Paper square>{children}</Paper>
           </Fade>
         )}
       </Popper>
@@ -31,10 +31,10 @@ class SuggestPopperComponent extends PureComponent {
   }
 }
 SuggestPopperComponent.propTypes = {
-  classes: PropTypes.shape({ classes: PropTypes.object.isRequired }),
-  idValue: PropTypes.shape({ idValue: PropTypes.string }),
-  anchorEl: PropTypes.shape({ anchorEl: PropTypes.object.isRequired }),
-  children: PropTypes.shape({ children: PropTypes.array.isRequired }),
+  classes: PropTypes.object.isRequired,
+  idValue: PropTypes.string,
+  anchorEl: PropTypes.object.isRequired,
+  children: PropTypes.array.isRequired,
 };
 
 export default withStyles(styles)(SuggestPopperComponent);
