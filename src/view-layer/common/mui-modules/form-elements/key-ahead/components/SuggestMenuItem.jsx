@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 class SuggestMenuItem extends PureComponent {
   render() {
     const { isHighlighted, item } = this.props;
+
+    console.log('SuggestMenuItem --', item)
     return (
       <MenuItem selected={isHighlighted} component="div">
         <div>
@@ -24,3 +26,6 @@ SuggestMenuItem.propTypes = {
     keyIndex: PropTypes.string.isRequired,
   }),
 };
+
+
+export default SuggestMenuItem;

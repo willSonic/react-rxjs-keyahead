@@ -3,12 +3,17 @@ import PropTypes from 'prop-types';
 import { Subject } from 'rxjs';
 import { debounceTime } from 'rxjs/operators';
 import SuggestInputText from '../../common/mui-modules/form-elements/key-ahead/components/SuggestInputText';
+import SuggestMenuItem from '../../common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem';
+import SuggestPopper from '../../common/mui-modules/form-elements/key-ahead/components/SuggestPopper';
 import { BookCollectionConnectServices } from '../../../business-layer/connected-services/BooksConnectService';
 
 @BookCollectionConnectServices
 class SearchAheadContainer extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      anchorEl: null,
+    };
     this.onSearch$ = new Subject().pipe(debounceTime(300));
   }
 
@@ -26,21 +31,31 @@ class SearchAheadContainer extends Component {
   }
 
   onInputChange = e => {
-    const searchQuery = e.target.value;
-    this.onSearch$.next(searchQuery);
+    this.onSearch$.next(e.target.value);
+  };
+
+  renderSuggestionItems = item => {
+    console.log('SuggestMenuItem item.title --', item.title);
+    console.log('SuggestMenuItem item.id --', item.id);
+    return <SuggestMenuItem item={{ label: item.title, keyIndex: item.id }} />;
   };
 
   render() {
     const { booksSearchList } = this.props;
+    const { anchorEl } = this.state;
     return (
       <div className="search__container-input">
         <SuggestInputText
           idValue="ws-suggest-input"
           labelValue="Book Finder"
           helperValue="Search by Title"
+          inputRef={node => this.setState({ anchorEl: node })}
           handleChange={this.onInputChange}
         />
-        <div> debounced value: {booksSearchList.size} </div>
+        <SuggestPopper anchorEl={anchorEl}>
+          {booksSearchList.size > 0 &&
+            booksSearchList.map(item => this.renderSuggestionItems(item))}
+        </SuggestPopper>
       </div>
     );
   }
