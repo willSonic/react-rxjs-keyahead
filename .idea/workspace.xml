@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f8bb332-0804-4a04-a97f-4092198ce451" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view-layer/utils/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/utils/registerServiceWorker.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,14 +21,14 @@
     <fileColor scope="Changed Files" color="7be648" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55584824">
+    <splitter split-orientation="horizontal" split-proportion="0.55578727">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="754">
-                  <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+                <state relative-caret-position="994">
+                  <caret line="67" column="2" lean-forward="true" selection-start-line="67" selection-start-column="2" selection-end-line="68" selection-end-column="4" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -47,19 +37,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/songster/sonsgter-effects.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="884">
-                  <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+                <state relative-caret-position="380">
+                  <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#42#0" expanded="true" />
                   </folding>
@@ -75,7 +56,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.eslintrc">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
+                <state relative-caret-position="380">
                   <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
                 </state>
               </provider>
@@ -89,7 +70,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/paths.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="680">
+                <state relative-caret-position="400">
                   <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
                 </state>
               </provider>
@@ -98,7 +79,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/view-layer/global-styles/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
+                <state relative-caret-position="160">
                   <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
                 </state>
               </provider>
@@ -107,7 +88,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/view-layer/_root/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
+                <state relative-caret-position="20">
                   <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
                 </state>
               </provider>
@@ -122,11 +103,23 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="600">
+                  <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+                  <folding>
+                    <element signature="e#0#45#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="918">
-                  <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+                <state relative-caret-position="140">
+                  <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                   </folding>
@@ -137,17 +130,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
+                <state relative-caret-position="80">
                   <caret line="4" column="33" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="711">
-                  <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+                <state relative-caret-position="340">
+                  <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#35#0" expanded="true" />
                   </folding>
@@ -158,7 +151,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
+                <state relative-caret-position="40">
                   <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#70#0" expanded="true" />
@@ -170,8 +163,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="641">
-                  <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+                <state relative-caret-position="460">
+                  <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
                   <folding>
                     <element signature="e#0#48#0" expanded="true" />
                   </folding>
@@ -182,7 +175,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
+                <state relative-caret-position="40">
                   <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
@@ -194,8 +187,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+                <state relative-caret-position="260">
+                  <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
                   <folding>
                     <element signature="e#0#42#0" expanded="true" />
                   </folding>
@@ -206,7 +199,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1624">
+                <state relative-caret-position="920">
                   <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
@@ -255,7 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/view-layer/_root/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/view-layer/utils/mount.jsx" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -296,7 +288,6 @@
         <option value="$PROJECT_DIR$/src/view-layer/_search/scene/SearchScene.jsx" />
         <option value="$PROJECT_DIR$/src/view-layer/_search/styles/_search.scss" />
         <option value="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx" />
-        <option value="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx" />
         <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js" />
         <option value="$PROJECT_DIR$/src/data-layer/redux-services/index.js" />
         <option value="$PROJECT_DIR$/src/view-layer/utils/registerServiceWorker.js" />
@@ -304,14 +295,16 @@
         <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/index.js" />
         <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js" />
-        <option value="$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx" />
         <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js" />
+        <option value="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx" />
+        <option value="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx" />
+        <option value="$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2560" />
-    <option name="y" value="-91" />
+    <option name="x" value="9" />
+    <option name="y" value="23" />
     <option name="width" value="2531" />
     <option name="height" value="1402" />
   </component>
@@ -596,17 +589,18 @@
       <workItem from="1551803400882" duration="13649000" />
       <workItem from="1551827135187" duration="14372000" />
       <workItem from="1551849711739" duration="1824000" />
+      <workItem from="1551931767848" duration="5510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95975000" />
+    <option name="totallyTimeSpent" value="101485000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="-91" width="2531" height="1402" extended-state="0" />
+    <frame x="9" y="23" width="2531" height="1402" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2343687" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23433134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -675,16 +669,6 @@
           <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="12" />
           <folding>
             <element signature="e#0#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -790,30 +774,6 @@
     <entry file="file://$PROJECT_DIR$/config/webpack.dev.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/paths.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/global-styles/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/_root/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view-layer/global-styles/_colors.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2108">
@@ -875,26 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view-layer/utils/registerServiceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -926,23 +866,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/_root/App.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx">
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/songster/sonsgter-effects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1624">
-          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="20">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js">
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="380">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -951,41 +888,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
+        <state relative-caret-position="380">
           <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js">
+    <entry file="file://$PROJECT_DIR$/config/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paths.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="400">
+          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/songster/sonsgter-effects.js">
+    <entry file="file://$PROJECT_DIR$/src/view-layer/global-styles/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="160">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/index.js">
+    <entry file="file://$PROJECT_DIR$/src/view-layer/_root/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/_root/App.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="40">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="e#0#70#0" expanded="true" />
@@ -993,30 +937,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js">
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="460">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="340">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="994">
+          <caret line="67" column="2" lean-forward="true" selection-start-line="67" selection-start-column="2" selection-end-line="68" selection-end-column="4" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

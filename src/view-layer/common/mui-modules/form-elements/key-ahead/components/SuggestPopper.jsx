@@ -13,13 +13,13 @@ const styles = theme => ({
 
 class SuggestPopperComponent extends PureComponent {
   render() {
-    const { classes, idValue, anchorEl, children } = this.props;
+    const { idValue, anchorEl, children } = this.props;
     return (
       <Popper
         id={idValue || 'suggest-popper'}
         anchorEl={anchorEl}
         transition
-        open={Boolean(children.length > 0)}
+        open={Boolean(children.size > 0)}
       >
         {({ TransitionProps }) => (
           <Fade {...TransitionProps} timeout={350}>
@@ -31,7 +31,6 @@ class SuggestPopperComponent extends PureComponent {
   }
 }
 SuggestPopperComponent.propTypes = {
-  classes: PropTypes.object.isRequired,
   idValue: PropTypes.string,
   anchorEl: PropTypes.object.isRequired,
   children: PropTypes.array.isRequired,
