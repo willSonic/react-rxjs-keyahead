@@ -12,7 +12,7 @@ export const booksSearchList = createSelector(
 );
 
 export const isLoading = createSelector(
-  [getBooksSearchList],
+  [getBooksSearchListLoading],
   loading => loading,
 );
 

@@ -17,14 +17,14 @@ import {
 export const epicSearchGoogleBooks = action$ =>
   action$.pipe(
     ofType(BookActionTypes.BOOK_SEARCH_BY_TITLE),
-    debounceTime(500),
+    debounceTime(300),
     mergeMap(({ payload }) => {
       return ajax
         .getJSON(
           `${apiGoogleFetchBooksByName +
             searchTerms.IN_TITLE +
             payload +
-            '&maxResults=20'}`,
+            '&maxResults=10'}`,
         )
         .pipe(
           map(response =>

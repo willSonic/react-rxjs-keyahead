@@ -5,7 +5,7 @@ import { BookActionTypes } from './index';
 export const initialState = {
   loading: false,
   error: null,
-  booksSearchList: BooksList,
+  booksSearchList: new BooksList(),
 };
 
 export const mergeRecords = records => {

@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import SearchAheadContainer from '../container/SearchAheadContainer';
 
+// eslint-disable-next-line
 class SearchScene extends PureComponent {
   render() {
     return (

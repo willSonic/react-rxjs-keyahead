@@ -12,9 +12,30 @@ class SearchAheadContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      openPopper: false,
+      openBasedOnProps: false,
+      queryString:'',
       anchorEl: null,
     };
-    this.onSearch$ = new Subject().pipe(debounceTime(300));
+    this.onSearch$ = new Subject().pipe(debounceTime(100));
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    const { booksSearchList } = props;
+    const { openBasedOnProps } = state;
+    if (!openBasedOnProps && booksSearchList && booksSearchList.size > 0) {
+      return {
+        openBasedOnProps: true,
+        openPopper: true,
+      };
+    } else if (booksSearchList && booksSearchList.size === 0) {
+      return {
+        openBasedOnProps: false,
+        openPopper: false,
+      };
+    } else {
+      return null;
+    }
   }
 
   componentDidMount() {
@@ -30,32 +51,65 @@ class SearchAheadContainer extends Component {
     }
   }
 
-  onInputChange = e => {
-    this.onSearch$.next(e.target.value);
+  handleClose = () => {
+    if (this.state.openPopper) {
+      this.setState({ openPopper: false });
+    }
+  };
+
+  onItemSelected = item => {
+    this.handleClose();
+    console.log(' onInputChange ,item=', item);
+  };
+
+  onInputChange = event => {
+    const { booksSearchList } = this.props;
+    const { queryString } = this.state;
+    if (!event.target.value && (booksSearchList && booksSearchList.size > 0)) {
+      console.log('  booksSearchList.size =',booksSearchList.size)
+      this.setState({ openPopper: true });
+    } else if (event.target.value !== queryString) {
+      if (!this.state.anchorEl) {
+        this.setState({ anchorEl: event.currentTarget });
+      }
+      this.setState({ queryString: event.target.value });
+      console.log('  event.target.value ', event.target.value)
+      this.onSearch$.next(event.target.value);
+    }
   };
 
   renderSuggestionItems = item => {
-    console.log('SuggestMenuItem item.title --', item.title);
-    console.log('SuggestMenuItem item.id --', item.id);
-    return <SuggestMenuItem item={{ label: item.title, keyIndex: item.id }} />;
+    return (
+      <SuggestMenuItem
+        item={{ label: item.title, id: String(item.id) }}
+        key={String(item.id)}
+        handleSelect={this.onItemSelected}
+      />
+    );
   };
 
   render() {
-    const { booksSearchList } = this.props;
-    const { anchorEl } = this.state;
+    const { booksSearchList, booksLoading } = this.props;
+    const { openPopper, anchorEl } = this.state;
     return (
       <div className="search__container-input">
         <SuggestInputText
           idValue="ws-suggest-input"
           labelValue="Book Finder"
           helperValue="Search by Title"
-          inputRef={node => this.setState({ anchorEl: node })}
           handleChange={this.onInputChange}
+          suggestionLoading={booksLoading}
         />
-        <SuggestPopper anchorEl={anchorEl}>
-          {booksSearchList.size > 0 &&
-            booksSearchList.map(item => this.renderSuggestionItems(item))}
-        </SuggestPopper>
+        {anchorEl && (
+          <SuggestPopper
+            anchorElement={anchorEl}
+            onHandleClickAway={this.handleClose}
+            open={openPopper}
+          >
+            {booksSearchList &&
+              booksSearchList.map(item => this.renderSuggestionItems(item))}
+          </SuggestPopper>
+        )}
       </div>
     );
   }
@@ -64,6 +118,7 @@ class SearchAheadContainer extends Component {
 SearchAheadContainer.propTypes = {
   booksLoading: PropTypes.bool,
   booksSearchList: PropTypes.arrayOf(PropTypes.object),
+  // eslint-disable-next-line
   booksSearchListError: PropTypes.object,
   searchForBooksByTitle: PropTypes.shape({
     searchForBooksByTitle: PropTypes.func.isRequired,

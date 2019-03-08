@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { Provider } from 'react-redux';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import store from '../../data-layer/redux-services';
@@ -9,7 +9,9 @@ import Theme from '../common/mui-modules/muiTheme';
 // Store Configuration
 
 const THEME = createMuiTheme(Theme);
-class App extends Component {
+
+// eslint-disable-next-line
+class App extends PureComponent {
   render() {
     return (
       <MuiThemeProvider theme={THEME}>
