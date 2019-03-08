@@ -39,17 +39,17 @@ assignees: ''
 ---
 
 #### Containers
-⋅⋅* Props State
-⋅⋅* Props Action
-⋅⋅* Local State
+* Props State
+* Props Action
+* Local State
 
 
 #### Components
-⋅⋅* Local State
+* Local State
 
 
 #### Common
-⋅⋅* Material Module
+* Material Module
 
 
 #### Style
@@ -71,9 +71,9 @@ assignees: ''
 ---
 
 #### Redux Services
-1. Effects
-2. reducer
-3. selectors
+* Effects
+* reducer
+* selectors
 
 #### API 
 
