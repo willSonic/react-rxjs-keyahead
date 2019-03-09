@@ -5,7 +5,7 @@ import { mergeMap, debounceTime, map, catchError } from 'rxjs/operators';
 import {
   BookActionTypes,
   BookActionFunctions,
-  apiGoogleFetchBooksByName,
+  apiGoogleBooksApi,
   searchTerms,
 } from './index';
 
@@ -21,7 +21,7 @@ export const epicSearchGoogleBooks = action$ =>
     mergeMap(({ payload }) => {
       return ajax
         .getJSON(
-          `${apiGoogleFetchBooksByName +
+          `${apiGoogleBooksApi +
             searchTerms.IN_TITLE +
             payload +
             '&maxResults=10'}`,
@@ -34,5 +34,18 @@ export const epicSearchGoogleBooks = action$ =>
             of(BookActionFunctions.bookSearchByTitleFailure(error)),
           ),
         );
+    }),
+  );
+
+export const epicFetchBookFromGoogle = action$ =>
+  action$.pipe(
+    ofType(BookActionTypes.FETCH_BOOK_BY_ID),
+    mergeMap(({ payload }) => {
+      return ajax.getJSON(`${apiGoogleBooksApi}${payload}`).pipe(
+        map(response => BookActionFunctions.fetchBookByIdSuccess(response)),
+        catchError(error =>
+          of(BookActionFunctions.fetchBookByIdFailure(error)),
+        ),
+      );
     }),
   );

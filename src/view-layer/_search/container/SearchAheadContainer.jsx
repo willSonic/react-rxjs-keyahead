@@ -7,35 +7,51 @@ import SuggestMenuItem from '../../common/mui-modules/form-elements/key-ahead/co
 import SuggestPopper from '../../common/mui-modules/form-elements/key-ahead/components/SuggestPopper';
 import { BookCollectionConnectServices } from '../../../business-layer/connected-services/BooksConnectService';
 
+
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+
 @BookCollectionConnectServices
 class SearchAheadContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
       openPopper: false,
+      openDialog: false,
       openBasedOnProps: false,
-      queryString:'',
+      queryString: '',
       anchorEl: null,
     };
     this.onSearch$ = new Subject().pipe(debounceTime(100));
   }
 
   static getDerivedStateFromProps(props, state) {
-    const { booksSearchList } = props;
+    const { booksSearchList, selectedBook } = props;
     const { openBasedOnProps } = state;
     if (!openBasedOnProps && booksSearchList && booksSearchList.size > 0) {
       return {
         openBasedOnProps: true,
         openPopper: true,
       };
-    } else if (booksSearchList && booksSearchList.size === 0) {
+    }
+    if (booksSearchList && booksSearchList.size === 0) {
       return {
         openBasedOnProps: false,
         openPopper: false,
       };
-    } else {
-      return null;
     }
+
+    if (selectedBook) {
+      return {
+        openDialog: true,
+      };
+    }
+
+    return null;
   }
 
   componentDidMount() {
@@ -57,24 +73,27 @@ class SearchAheadContainer extends Component {
     }
   };
 
+  handleDialogClose = () => {
+    this.setState({ openDialog: false });
+  };
+
   onItemSelected = item => {
+    const { setSelectedBookId } = this.props;
     this.handleClose();
-    console.log(' onInputChange ,item=', item);
+    setSelectedBookId(item.id);
   };
 
   onInputChange = event => {
-    const { booksSearchList } = this.props;
     const { queryString } = this.state;
-    if (!event.target.value && (booksSearchList && booksSearchList.size > 0)) {
-      console.log('  booksSearchList.size =',booksSearchList.size)
-      this.setState({ openPopper: true });
-    } else if (event.target.value !== queryString) {
+    const newQuery = event.target.value ? event.target.value : undefined;
+    if (newQuery && newQuery !== queryString) {
       if (!this.state.anchorEl) {
         this.setState({ anchorEl: event.currentTarget });
       }
-      this.setState({ queryString: event.target.value });
-      console.log('  event.target.value ', event.target.value)
-      this.onSearch$.next(event.target.value);
+      this.setState({ queryString: newQuery });
+      this.onSearch$.next(newQuery);
+    } else if (this.state.openPopper) {
+      this.handleClose();
     }
   };
 
@@ -90,7 +109,7 @@ class SearchAheadContainer extends Component {
 
   render() {
     const { booksSearchList, booksLoading } = this.props;
-    const { openPopper, anchorEl } = this.state;
+    const { openPopper, anchorEl, openDialog } = this.state;
     return (
       <div className="search__container-input">
         <SuggestInputText
@@ -110,6 +129,30 @@ class SearchAheadContainer extends Component {
               booksSearchList.map(item => this.renderSuggestionItems(item))}
           </SuggestPopper>
         )}
+        <Dialog
+          open={openDialog}
+          onClose={this.handleDialogClose}
+          aria-labelledby="alert-dialog-title"
+          aria-describedby="alert-dialog-description"
+        >
+          <DialogTitle id="alert-dialog-title">
+            {"Use Google's location service?"}
+          </DialogTitle>
+          <DialogContent>
+            <DialogContentText id="alert-dialog-description">
+              Let Google help apps determine location. This means sending
+              anonymous location data to Google, even when no apps are running.
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={this.handleDialogClose} color="primary">
+              Disagree
+            </Button>
+            <Button onClick={this.handleDialogClose} color="primary" autoFocus>
+              Agree
+            </Button>
+          </DialogActions>
+        </Dialog>
       </div>
     );
   }
@@ -120,9 +163,9 @@ SearchAheadContainer.propTypes = {
   booksSearchList: PropTypes.arrayOf(PropTypes.object),
   // eslint-disable-next-line
   booksSearchListError: PropTypes.object,
-  searchForBooksByTitle: PropTypes.shape({
-    searchForBooksByTitle: PropTypes.func.isRequired,
-  }),
+  searchForBooksByTitle: PropTypes.func,
+  setSelectedBookId: PropTypes.func,
+  selectedBook: PropTypes.object,
 };
 
 export default SearchAheadContainer;

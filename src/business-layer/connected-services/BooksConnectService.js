@@ -8,10 +8,12 @@ const mapStateToProps = state => ({
   booksLoading: BookSelectors.isLoading(state),
   booksSearchList: BookSelectors.booksSearchList(state),
   booksSearchListError: BookSelectors.booksSearchListError(state),
+  selectedBook: BookSelectors.selectedBook(state),
 });
 
 const mapDispatchToProps = {
   searchForBooksByTitle: BookActionFunctions.bookSearchByTitle,
+  setSelectedBookId: BookActionFunctions.selectBookById,
 };
 
 export const BookCollectionConnectServices = connect(

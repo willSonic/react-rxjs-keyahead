@@ -5,6 +5,7 @@ import { BookActionTypes } from './index';
 export const initialState = {
   loading: false,
   error: null,
+  selectedId:null,
   booksSearchList: new BooksList(),
 };
 
@@ -31,21 +32,28 @@ export const BooksListReducer = (state = initialImmutableState, action) => {
         mutableState
           .set('loading', true)
           .set('error', null)
+          .set('selectedId', null)
           .set('booksSearchList', new BooksList());
       });
     case BookActionTypes.BOOK_SEARCH_BY_TITLE_SUCCESS:
       return state.withMutations(mutableState => {
         mutableState
-          .set('booksSearchList', mergeRecords(payload))
           .set('loading', false)
-          .set('error', null);
+          .set('error', null)
+          .set('selectedId', null)
+          .set('booksSearchList', mergeRecords(payload));
       });
     case BookActionTypes.BOOK_SEARCH_BY_TITLE_FAILURE:
       return state.withMutations(mutableState => {
         mutableState
           .set('loading', false)
           .set('error', payload)
+          .set('selectedId', null)
           .set('booksSearchList', new BooksList());
+      });
+    case BookActionTypes.SELECT_BOOK_BY_ID:
+      return state.withMutations(mutableState => {
+        mutableState.set('selectedId', payload);
       });
     default:
       return state;
@@ -56,4 +64,6 @@ export const getBooksSearchList = state =>
   state.BooksListReducer.get('booksSearchList');
 export const getBooksSearchListLoading = state =>
   state.BooksListReducer.get('loading');
+export const getSelectedBookId = state =>
+  state.BooksListReducer.get('selectedId');
 export const getBooksSearchListError = state => state.BooksListReducer.error;

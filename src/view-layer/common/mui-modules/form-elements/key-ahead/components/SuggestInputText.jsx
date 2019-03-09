@@ -25,7 +25,7 @@ class SuggestInputText extends PureComponent {
       doShrink,
       handleChange,
       suggestionLoading,
-      classes
+      classes,
     } = this.props;
     return (
       <Fragment>
@@ -43,7 +43,9 @@ class SuggestInputText extends PureComponent {
           onFocus={handleChange}
           onChange={handleChange}
         />
-        {suggestionLoading && <LinearProgress color="primary" styles={{width:300}} />}
+        {suggestionLoading && (
+          <LinearProgress color="primary" styles={{ width: 300 }} />
+        )}
       </Fragment>
     );
   }

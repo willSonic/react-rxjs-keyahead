@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f8bb332-0804-4a04-a97f-4092198ce451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/themes/SuggestMenuItemTheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectManagment/Spec[Key-Ahead-Suggest].md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_effects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-layer/redux-services/collections/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view-layer/_root/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/_root/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-layer/redux-services/books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-layer/redux-services/books/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view-layer/_search/scene/SearchScene.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/_search/scene/SearchScene.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/AutoSuggestComponent.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,170 +31,115 @@
     <fileColor scope="Changed Files" color="7be648" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35595635">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="652">
-                  <caret line="45" column="86" selection-start-line="45" selection-start-column="86" selection-end-line="45" selection-end-column="86" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="477">
-                  <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#0#42#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/muiTheme.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2503" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/_root/App.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="387">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/global-styles/_colors.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/_search/scene/SearchScene.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/global-styles/styles.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/_search/styles/_search.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="930">
-                  <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="642">
-                  <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="43" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="14">
-                  <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#0#70#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#0#42#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-638">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1126">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1046">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3663">
+              <caret line="111" column="60" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="26" column="87" selection-start-line="26" selection-start-column="87" selection-end-line="26" selection-end-column="87" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_actions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_effects.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -235,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/view-layer/utils/mount.jsx" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/view-layer/common/rxjsObservableComponent.js" />
         <option value="$PROJECT_DIR$/src/view-layer/common/form-elements/InputComponent.jsx" />
         <option value="$PROJECT_DIR$/src/view-layer/common/form-elements/GeneralTextInputComponent.jsx" />
@@ -255,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/data-layer/models/books/ImageLink.js" />
         <option value="$PROJECT_DIR$/src/data-layer/models/books/Book.js" />
         <option value="$PROJECT_DIR$/src/data-layer/redux-services/songster/index.js" />
-        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js" />
         <option value="$PROJECT_DIR$/src/view-layer/_home/styles/_home.scss" />
         <option value="$PROJECT_DIR$/src/view-layer/_home/index.scss" />
         <option value="$PROJECT_DIR$/src/view-layer/_home/HomeScene.jsx" />
@@ -272,28 +215,31 @@
         <option value="$PROJECT_DIR$/config/paths.js" />
         <option value="$PROJECT_DIR$/src/data-layer/redux-services/index.js" />
         <option value="$PROJECT_DIR$/src/view-layer/utils/registerServiceWorker.js" />
-        <option value="$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js" />
         <option value="$PROJECT_DIR$/.eslintrc" />
-        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/index.js" />
         <option value="$PROJECT_DIR$/src/view-layer/_search/styles/_search.scss" />
-        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js" />
         <option value="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/themes/SuggestMenuItemTheme.js" />
-        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js" />
         <option value="$PROJECT_DIR$/src/view-layer/_search/scene/SearchScene.jsx" />
         <option value="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx" />
         <option value="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx" />
         <option value="$PROJECT_DIR$/src/view-layer/_root/App.jsx" />
-        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js" />
         <option value="$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx" />
+        <option value="$PROJECT_DIR$/projectManagment/Spec[Key-Ahead-Suggest].md" />
+        <option value="$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_actions.js" />
+        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js" />
+        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js" />
+        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/index.js" />
+        <option value="$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js" />
+        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js" />
+        <option value="$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js" />
         <option value="$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="23" />
-    <option name="width" value="2531" />
-    <option name="height" value="1402" />
+    <option name="x" value="-2547" />
+    <option name="y" value="93" />
+    <option name="width" value="2506" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -301,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,7 +257,7 @@
             <path>
               <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="projectManagment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
@@ -336,22 +281,30 @@
               <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="business-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="local-view-services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="business-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="local-view-services" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="data-layer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data-layer" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data-layer" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="books" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data-layer" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="songsterr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
@@ -374,6 +327,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data-layer" type="462c0819:PsiDirectoryNode" />
               <item name="redux-services" type="462c0819:PsiDirectoryNode" />
+              <item name="collections" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data-layer" type="462c0819:PsiDirectoryNode" />
+              <item name="redux-services" type="462c0819:PsiDirectoryNode" />
               <item name="songster" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -387,7 +348,15 @@
               <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="_root" type="462c0819:PsiDirectoryNode" />
+              <item name="_home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
+              <item name="_home" type="462c0819:PsiDirectoryNode" />
+              <item name="scene" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
@@ -404,93 +373,11 @@
               <item name="_search" type="462c0819:PsiDirectoryNode" />
               <item name="container" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="_search" type="462c0819:PsiDirectoryNode" />
-              <item name="scene" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="_search" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="_assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="mui-modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="mui-modules" type="462c0819:PsiDirectoryNode" />
-              <item name="form-elements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="mui-modules" type="462c0819:PsiDirectoryNode" />
-              <item name="form-elements" type="462c0819:PsiDirectoryNode" />
-              <item name="key-ahead" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="mui-modules" type="462c0819:PsiDirectoryNode" />
-              <item name="form-elements" type="462c0819:PsiDirectoryNode" />
-              <item name="key-ahead" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="global-styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-rxjs-keyahead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-rxjs-keyahead" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view-layer" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -563,17 +450,20 @@
       <workItem from="1551827135187" duration="14372000" />
       <workItem from="1551849711739" duration="1824000" />
       <workItem from="1551931767848" duration="5510000" />
+      <workItem from="1552071953360" duration="201000" />
+      <workItem from="1552074167707" duration="402000" />
+      <workItem from="1552085164877" duration="10427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128363000" />
+    <option name="totallyTimeSpent" value="139536000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="-76" width="2531" height="1402" extended-state="0" />
+    <frame x="-2547" y="93" width="2506" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1500605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15403423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -619,44 +509,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/songster/songster-actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="6" selection-start-line="6" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/models/songsterr/Artist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/models/songsterr/Song.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/models/books/ImageLink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view-layer/_home/index.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -808,23 +660,6 @@
     <entry file="file://$PROJECT_DIR$/src/view-layer/_root/App.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -832,13 +667,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js">
+    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/AutoSuggestComponent.jsx" />
+    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/themes/SuggestMenuItemTheme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/muiTheme.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/_root/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/global-styles/_colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -849,89 +706,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/muiTheme.js">
+    <entry file="file://$PROJECT_DIR$/src/view-layer/_search/scene/SearchScene.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2503" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/AutoSuggestComponent.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3492">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/_root/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/global-styles/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/themes/SuggestMenuItemTheme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        <state relative-caret-position="68">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
@@ -941,46 +719,136 @@
     <entry file="file://$PROJECT_DIR$/src/view-layer/_search/styles/_search.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestMenuItem.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="43" selection-end-column="39" />
+        <state relative-caret-position="1326">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="43" selection-end-column="39" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestInputText.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="45" column="86" selection-start-line="45" selection-start-column="86" selection-end-line="45" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-layer/_search/scene/SearchScene.jsx">
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projectManagment/Spec[Key-Ahead-Suggest].md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1850">
+            <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_reducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/collections/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/collections/collection_effects.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1046">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-layer/common/mui-modules/form-elements/key-ahead/components/SuggestPopper.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-638">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-effects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1126">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/business-layer/connected-services/BooksConnectService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-selectors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="26" column="87" selection-start-line="26" selection-start-column="87" selection-end-line="26" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view-layer/_search/container/SearchAheadContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        <state relative-caret-position="3663">
+          <caret line="111" column="60" selection-start-line="111" selection-start-column="60" selection-end-line="111" selection-end-column="60" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-layer/redux-services/books/book-reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
